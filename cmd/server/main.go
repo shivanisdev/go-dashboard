@@ -43,6 +43,7 @@ func main() {
 		fmt.Println("Not connected")
 		log.Fatal(err)
 	}
+
 	db := mongoClient.Database(cfg.DbName)
 
 	srv := &http.Server{
